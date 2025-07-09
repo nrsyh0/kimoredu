@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard</title>
+</head>
+<body>
+  <h2>Selamat datang di Dashboard!</h2>
+  <p>Halo, <span id="username">User</span>!</p>
+
+  <button id="logoutBtn">Logout</button>
+
+  <script>
+    // Dummy data username, nanti bisa dihubungkan dengan login sebenarnya
+    const username = 'admin'; // bisa ganti sesuai user login
+
+    document.getElementById('username').textContent = username;
+
+    // Logout button redirect ke login.html
+    document.getElementById('logoutBtn').addEventListener('click', () => {
+      alert('Logout berhasil!');
+      window.location.href = 'login.html'; // pindah ke halaman login
+    });
+  </script>
+</body>
+</html>
